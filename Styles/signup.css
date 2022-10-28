@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0, .5),
+    rgba(0,0,0, .5)), url("https://images2.alphacoders.com/105/1053867.jpg");
+    background-size: cover;
+    background-position: center;
+    color: yellow;
+
+}
+
+.container{
+    width: 400px;
+    height: auto;
+    background-color: rgb(254, 228, 81);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0, .3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+form{
+    padding: 30px 35px;
+    background-color: rgb(37, 37, 37);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-input{
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    background-color: #eeee;
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease;
+}
+.form-input:focus{
+    outline: none;
+    border-bottom: 2px solid yellow;
+}
+.form-input::-webkit-input-placeholder{
+    color: rgb(131, 130, 27);
+    
+}
+
+.form-label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: all .3s ease;
+
+}
+
+.form-input:placeholder-shown + .form-label{
+    transform: translateY(-37px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-btn{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2c2c2c;
+    background-color: #eee;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: all .2s ease;
+}
+
+.btn:hover{
+    background-color: gold;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0, .25);
+}
+
+.form-bottom{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.sign{
+    color: #2c2c2c;
+    font-size: 12px;
+
+}
+
+.social{
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social i{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0, .4);
+    transition: all 0.3s ease;
+}
+.social i:hover{
+    box-shadow: 0 10px 30px rgba(0,0,0, .4);
+    transform: translateY(-2px);
+}
+
+.social i:active{
+    transform: translateY(0);
+}
+
+.login{
+    margin-top: 33px;
+    margin-bottom: 23px;
+}
+.login a{
+    color: aqua;
+    text-decoration: none;
+}
+
+.signup{
+    margin-top: 33px;
+    margin-bottom: 23px;
+}
+.signup a{
+    color: aqua;
+    text-decoration: none;
+}
+/*  */
